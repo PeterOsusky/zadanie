@@ -42,7 +42,7 @@ struct ProductDetailView: View {
                     
                     Spacer()
                     
-                    Text("Price: \(productDetailVM.product.price)")
+                    Text("Price: \(String(format: "%.2f", productDetailVM.product.price)) €")
                 }
                 
                 Spacer()
@@ -50,5 +50,9 @@ struct ProductDetailView: View {
             .padding()
             .navigationBarTitle(productDetailVM.product.category, displayMode: .inline)
         }
+        .onAppear {
+            productDetailVM.fetchProduct(id: productDetailVM.product.id)
+        }
     }
 }
+

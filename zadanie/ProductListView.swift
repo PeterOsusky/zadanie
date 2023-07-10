@@ -24,7 +24,7 @@ struct ProductListView: View {
     var body: some View {
         NavigationView {
             List(filteredProducts, id: \.id) { product in
-                NavigationLink(destination: ProductDetailView(productDetailVM: ProductDetailViewModel(product: product))) {
+                NavigationLink(destination: ProductDetailView(productDetailVM: ProductDetailViewModel(id: product.id))) {
                     HStack {
                         AsyncImage(url: URL(string: product.image)) { image in
                             image.resizable()

@@ -26,6 +26,22 @@ class NetworkManager {
                 }
         }
     }
+
+    func fetchProduct(id: Int) -> Promise<Product> {
+        return Promise { seal in
+            AF.request("https://fakestoreapi.com/products/\(id)")
+                .validate()
+                .responseDecodable(of: Product.self) { response in
+                    switch response.result {
+                    case .success(let product):
+                        seal.fulfill(product)
+                    case .failure(let error):
+                        seal.reject(error)
+                    }
+                }
+        }
+    }
+    
     
     func fetchCategories() -> Promise<[Category]> {
         return Promise { seal in
