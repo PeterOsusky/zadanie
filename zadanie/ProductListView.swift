@@ -10,12 +10,20 @@ import SwiftUI
 
 struct ProductListView: View {
     @ObservedObject var productListVM = ProductListViewModel()
-    @State private var selectedCategory: Category? = nil
+    @State private var selectedCategory: String = "All"
     @State private var showFilter = false
+    
+    var filteredProducts: [Product] {
+        if selectedCategory != "All" {
+            return productListVM.products.filter { $0.category == selectedCategory }
+        } else {
+            return productListVM.products
+        }
+    }
     
     var body: some View {
         NavigationView {
-            List(productListVM.products) { product in
+            List(filteredProducts, id: \.id) { product in
                 NavigationLink(destination: ProductDetailView(productDetailVM: ProductDetailViewModel(product: product))) {
                     HStack {
                         AsyncImage(url: URL(string: product.image)) { image in
@@ -54,13 +62,14 @@ struct ProductListView: View {
     
     func getFilterButtons() -> [ActionSheet.Button] {
         var buttons = [ActionSheet.Button]()
-        buttons.append(.default(Text("All")) { self.selectedCategory?.title = "All" })
+        buttons.append(.default(Text("All")) { self.selectedCategory = "All" })
 
         for category in self.productListVM.categories {
-            buttons.append(.default(Text(category.title)) { self.selectedCategory?.title = category.title })
+            buttons.append(.default(Text(category.title)) { self.selectedCategory = category.title })
         }
         buttons.append(.cancel())
         return buttons
     }
+
 }
 
