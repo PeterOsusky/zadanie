@@ -46,7 +46,7 @@ struct ProductListView: View {
                 self.productListVM.fetchProducts()
                 self.productListVM.fetchCategories()
             }
-            .navigationBarTitle("Produkty", displayMode: .inline)
+            .navigationBarTitle(selectedCategory == "All" ? "Produkty" : selectedCategory, displayMode: .inline)
             .navigationBarItems(trailing:
                                     Button(action: {
                 self.showFilter.toggle()
@@ -62,8 +62,9 @@ struct ProductListView: View {
     
     func getFilterButtons() -> [ActionSheet.Button] {
         var buttons = [ActionSheet.Button]()
-        buttons.append(.default(Text("All")) { self.selectedCategory = "All" })
-
+        if selectedCategory != "All" {
+            buttons.append(.default(Text("remove filter " + selectedCategory)) { self.selectedCategory = "All" })
+        }
         for category in self.productListVM.categories {
             buttons.append(.default(Text(category.title)) { self.selectedCategory = category.title })
         }
