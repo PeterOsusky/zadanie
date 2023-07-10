@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D03D7BC82A5BF5D100B4EAB1 /* zadanieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D7BC72A5BF5D100B4EAB1 /* zadanieApp.swift */; };
-		D03D7BCA2A5BF5D100B4EAB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D7BC92A5BF5D100B4EAB1 /* ContentView.swift */; };
 		D03D7BCC2A5BF5D200B4EAB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03D7BCB2A5BF5D200B4EAB1 /* Assets.xcassets */; };
 		D03D7BCF2A5BF5D200B4EAB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D03D7BCE2A5BF5D200B4EAB1 /* Preview Assets.xcassets */; };
 		D03D7BD92A5BF5D200B4EAB1 /* zadanieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03D7BD82A5BF5D200B4EAB1 /* zadanieTests.swift */; };
@@ -22,7 +21,7 @@
 		D081FEFB2A5C043000D21D5F /* ProductListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081FEFA2A5C043000D21D5F /* ProductListViewModel.swift */; };
 		D081FEFD2A5C045000D21D5F /* ProductDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D081FEFC2A5C045000D21D5F /* ProductDetailViewModel.swift */; };
 		D081FF002A5C051D00D21D5F /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D081FEFF2A5C051D00D21D5F /* Alamofire */; };
-		D081FF032A5C05BF00D21D5F /* PMKAlamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D081FF022A5C05BF00D21D5F /* PMKAlamofire */; };
+		D096C1982A5C42B900EE842E /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = D096C1972A5C42B900EE842E /* PromiseKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +44,6 @@
 /* Begin PBXFileReference section */
 		D03D7BC42A5BF5D100B4EAB1 /* zadanie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zadanie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03D7BC72A5BF5D100B4EAB1 /* zadanieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zadanieApp.swift; sourceTree = "<group>"; };
-		D03D7BC92A5BF5D100B4EAB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D03D7BCB2A5BF5D200B4EAB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D03D7BCE2A5BF5D200B4EAB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D03D7BD42A5BF5D200B4EAB1 /* zadanieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = zadanieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,8 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D081FF032A5C05BF00D21D5F /* PMKAlamofire in Frameworks */,
 				D081FF002A5C051D00D21D5F /* Alamofire in Frameworks */,
+				D096C1982A5C42B900EE842E /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +118,6 @@
 				D081FEFA2A5C043000D21D5F /* ProductListViewModel.swift */,
 				D081FEFC2A5C045000D21D5F /* ProductDetailViewModel.swift */,
 				D03D7BC72A5BF5D100B4EAB1 /* zadanieApp.swift */,
-				D03D7BC92A5BF5D100B4EAB1 /* ContentView.swift */,
 				D03D7BCB2A5BF5D200B4EAB1 /* Assets.xcassets */,
 				D03D7BCD2A5BF5D200B4EAB1 /* Preview Content */,
 			);
@@ -170,7 +167,7 @@
 			name = zadanie;
 			packageProductDependencies = (
 				D081FEFF2A5C051D00D21D5F /* Alamofire */,
-				D081FF022A5C05BF00D21D5F /* PMKAlamofire */,
+				D096C1972A5C42B900EE842E /* PromiseKit */,
 			);
 			productName = zadanie;
 			productReference = D03D7BC42A5BF5D100B4EAB1 /* zadanie.app */;
@@ -246,7 +243,7 @@
 			mainGroup = D03D7BBB2A5BF5D100B4EAB1;
 			packageReferences = (
 				D081FEFE2A5C051D00D21D5F /* XCRemoteSwiftPackageReference "Alamofire" */,
-				D081FF012A5C05BF00D21D5F /* XCRemoteSwiftPackageReference "PMKAlamofire" */,
+				D096C1962A5C42B900EE842E /* XCRemoteSwiftPackageReference "PromiseKit" */,
 			);
 			productRefGroup = D03D7BC52A5BF5D100B4EAB1 /* Products */;
 			projectDirPath = "";
@@ -290,7 +287,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03D7BCA2A5BF5D100B4EAB1 /* ContentView.swift in Sources */,
 				D03D7BC82A5BF5D100B4EAB1 /* zadanieApp.swift in Sources */,
 				D081FEF12A5C036100D21D5F /* Product.swift in Sources */,
 				D081FEF92A5C03FE00D21D5F /* NetworkManager.swift in Sources */,
@@ -633,12 +629,12 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		D081FF012A5C05BF00D21D5F /* XCRemoteSwiftPackageReference "PMKAlamofire" */ = {
+		D096C1962A5C42B900EE842E /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/PromiseKit/PMKAlamofire";
+			repositoryURL = "git@github.com:mxcl/PromiseKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 4.0.0;
+				minimumVersion = 8.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -649,10 +645,10 @@
 			package = D081FEFE2A5C051D00D21D5F /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
-		D081FF022A5C05BF00D21D5F /* PMKAlamofire */ = {
+		D096C1972A5C42B900EE842E /* PromiseKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D081FF012A5C05BF00D21D5F /* XCRemoteSwiftPackageReference "PMKAlamofire" */;
-			productName = PMKAlamofire;
+			package = D096C1962A5C42B900EE842E /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
