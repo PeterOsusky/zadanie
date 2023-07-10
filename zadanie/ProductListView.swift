@@ -63,10 +63,12 @@ struct ProductListView: View {
     func getFilterButtons() -> [ActionSheet.Button] {
         var buttons = [ActionSheet.Button]()
         if selectedCategory != "All" {
-            buttons.append(.default(Text("remove filter " + selectedCategory)) { self.selectedCategory = "All" })
+            buttons.append(.destructive(Text("remove filter " + selectedCategory)) { self.selectedCategory = "All" })
         }
         for category in self.productListVM.categories {
-            buttons.append(.default(Text(category.title)) { self.selectedCategory = category.title })
+            if selectedCategory != category.title {
+                buttons.append(.default(Text(category.title)) { self.selectedCategory = category.title })
+            }
         }
         buttons.append(.cancel())
         return buttons
