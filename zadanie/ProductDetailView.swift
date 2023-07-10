@@ -33,16 +33,25 @@ struct ProductDetailView: View {
                 Spacer()
 
                 Text(productDetailVM.product.description)
-                    .font(.body)
+                    .font(.subheadline)
+                    .foregroundColor(.secondary)
 
                 Spacer()
 
                 HStack {
-                    Text("Product ID: \(productDetailVM.product.id)")
-                    
+                    VStack(alignment: .leading) {
+                        Text("ID Produktu")
+                            .foregroundColor(.secondary)
+                        Text("\(productDetailVM.product.id)")
+                    }
+
                     Spacer()
                     
-                    Text("Price: \(String(format: "%.2f", productDetailVM.product.price)) €")
+                    VStack(alignment: .trailing) {
+                        Text("Cena")
+                            .foregroundColor(.secondary)
+                        Text(String(format: "%.2f €", productDetailVM.product.price))
+                    }
                 }
                 
                 Spacer()
