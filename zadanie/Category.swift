@@ -6,8 +6,10 @@
 //
 
 import Foundation
-struct Category: Codable, Identifiable {
-    var id = UUID()
-    let title: String
-}
+struct Category: Codable {
+var title: String
 
+init(_ title: String) {
+    self.title = title
+}
+}

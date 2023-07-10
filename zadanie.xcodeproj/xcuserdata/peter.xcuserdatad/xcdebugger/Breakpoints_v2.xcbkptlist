@@ -3,4 +3,206 @@
    uuid = "0D7F22C1-307B-4CDA-A267-1880C6D9D9CA"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B4E51AE4-A157-42A6-B443-AF02767FECEA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zadanie/Category.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2C586FA-5821-4116-81E3-9692992E316B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zadanie/ProductListViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "ProductListViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - ded6bacbc8bc1145"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "property wrapper backing initializer of zadanie.ProductListViewModel.categories : Swift.Array&lt;zadanie.Category&gt;"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - 1e6fcfadaccca908"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.categories.getter : Swift.Array&lt;zadanie.Category&gt;"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - aca54914d68fed1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.categories.setter : Swift.Array&lt;zadanie.Category&gt;"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - 998754c8b5388a0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.categories.modify : Swift.Array&lt;zadanie.Category&gt;"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - d96eacecf4c13f35"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.categories.modify : Swift.Array&lt;zadanie.Category&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - c8dd16f73e7546b5"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.$categories.getter : Combine.Published&lt;Swift.Array&lt;zadanie.Category&gt;&gt;.Publisher"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - dea3fb532e71d689"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.$categories.setter : Combine.Published&lt;Swift.Array&lt;zadanie.Category&gt;&gt;.Publisher"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "216">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - 4b638003b9acde6d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.$categories.modify : Combine.Published&lt;Swift.Array&lt;zadanie.Category&gt;&gt;.Publisher"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/%3Ccompiler-generated%3E"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "56">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - 7c98905b37c271d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.$categories.modify : Combine.Published&lt;Swift.Array&lt;zadanie.Category&gt;&gt;.Publisher with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "24">
+               </Location>
+               <Location
+                  uuid = "C2C586FA-5821-4116-81E3-9692992E316B - ee105df3cb674593"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "zadanie.ProductListViewModel.init() -&gt; zadanie.ProductListViewModel"
+                  moduleName = "zadanie"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/peter/Desktop/projects/zadanie/zadanie/ProductListViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "240">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB26B88B-B9D9-4DC6-B75F-93B05C3800DC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "zadanie/NetworkManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "fetchCategories()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

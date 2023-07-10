@@ -26,5 +26,22 @@ class NetworkManager {
                 }
         }
     }
+    
+    func fetchCategories() -> Promise<[Category]> {
+        return Promise { seal in
+            AF.request("https://fakestoreapi.com/products/categories")
+                .validate()
+                .responseDecodable(of: [String].self) { response in
+                    switch response.result {
+                    case .success(let categoryTitles):
+                        let categories = categoryTitles.map(Category.init)
+                        seal.fulfill(categories)
+                    case .failure(let error):
+                        seal.reject(error)
+                    }
+                }
+        }
+    }
+
 }
 
