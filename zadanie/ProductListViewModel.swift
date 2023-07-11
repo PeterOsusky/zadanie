@@ -5,13 +5,11 @@
 //  Created by Peter on 10/07/2023.
 //
 
-import Foundation
 import Combine
 
 class ProductListViewModel: ObservableObject {
     @Published var products = [Product]()
     @Published var categories = [Category]()
-
 
     func fetchProducts() {
         NetworkManager.shared.fetchProducts()
@@ -35,4 +33,3 @@ class ProductListViewModel: ObservableObject {
             }
     }
 }
-

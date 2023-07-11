@@ -5,7 +5,6 @@
 //  Created by Peter on 10/07/2023.
 //
 
-import Foundation
 import Alamofire
 import PromiseKit
 
@@ -40,8 +39,7 @@ class NetworkManager {
                     }
                 }
         }
-    }
-    
+    }    
     
     func fetchCategories() -> Promise<[Category]> {
         return Promise { seal in
@@ -58,6 +56,4 @@ class NetworkManager {
                 }
         }
     }
-
 }
-

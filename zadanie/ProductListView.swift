@@ -5,7 +5,6 @@
 //  Created by Peter on 10/07/2023.
 //
 
-import Foundation
 import SwiftUI
 
 struct ProductListView: View {
@@ -47,16 +46,9 @@ struct ProductListView: View {
                 self.productListVM.fetchCategories()
             }
             .navigationBarTitle(selectedCategory == "All" ? "Produkty" : selectedCategory, displayMode: .inline)
-            .navigationBarItems(trailing:
-                                    Button(action: {
-                self.showFilter.toggle()
-            }) {
-                Text("Filter")
-            }
-                .actionSheet(isPresented: $showFilter) {
-                    ActionSheet(title: Text("Select a category"), buttons: self.getFilterButtons())
-                }
-            )
+            .navigationBarItems(trailing: Button(action: {self.showFilter.toggle()}) {Text("Filter")}
+            .actionSheet(isPresented: $showFilter) {ActionSheet(title: Text("Select a category"), buttons: self.getFilterButtons())
+            })
         }
     }
     
@@ -73,6 +65,4 @@ struct ProductListView: View {
         buttons.append(.cancel())
         return buttons
     }
-
 }
-
